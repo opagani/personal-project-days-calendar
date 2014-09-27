@@ -31,7 +31,7 @@ function aggregateDays(username) {
             } else {
                 console.log(results);
                 if (!results.length) {  // deleted all of the events for that user
-                    results = [{ _id: username, total: 0 }]
+                    results = [{ _id: username, total: 0 }];
                 }
                 updateDays(results);
             }
