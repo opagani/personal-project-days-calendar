@@ -107,7 +107,7 @@ module.exports = function(grunt) {
         script: 'app.js',
         options: {
           env: {
-            PORT: 8000
+            PORT: 9000
           },
           ext: 'js,ejs,html',
           callback: function (nodemon) {
@@ -119,7 +119,7 @@ module.exports = function(grunt) {
             nodemon.on('config:update', function () {
               // Delay before server listens on port
               setTimeout(function() {
-                require('open')('http://localhost:8000');
+                require('open')('http://localhost:9000');
               }, 1000);
             });
 
